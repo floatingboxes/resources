@@ -445,3 +445,22 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300; }
+
+b, strong {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600; }
+
+i, em, dfn {
+  font-family: "proxima-nova",sans-serif;
+  font-style: italic;
+  font-weight: 300; }
