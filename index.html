@@ -3,4 +3,35 @@ layout: default
 title: Hello World
 ---
 
-<p>Hello World</p>
+<h1>Floatingboxes' Resources</h1>
+
+<section class="resources">
+{% for post in site.posts %}
+
+	<article class="resource">
+		<a href="{{ post.www-url }}">
+    		<header>
+    			<h2 class="resource__header">{{ post.title }}</h2>
+    		</header>
+    		<div class="resource__body">
+    			{{ post.content }}
+    		</div>
+    		<div class="resource__tags">
+    			<ul>
+    				{% for tag in post.tags %}
+    					<li>{{ tag }}</li>
+    				{% endfor %}
+    			</ul>
+    		</div>
+    		<footer>
+    			<div class="resource__timestamp">
+    				{{ post.date | date: "%d %B %Y" }}
+    			</div>
+    			<div class="resource__permalink">
+    				<a href="{{ post.url }}">Permalink</a>
+    			</div>
+    		</footer>
+    	</a>
+    </article>
+{% endfor %}
+</section>
