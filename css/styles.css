@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -446,6 +451,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  margin: 2.5em; }
+
 html,
 button,
 input,
@@ -464,3 +472,27 @@ i, em, dfn {
   font-family: "proxima-nova",sans-serif;
   font-style: italic;
   font-weight: 300; }
+
+.resources {
+  *zoom: 1; }
+  .resources:before, .resources:after {
+    content: " ";
+    display: table; }
+  .resources:after {
+    clear: both; }
+
+.resource {
+  margin-bottom: 2.5em;
+  padding: 2.5em;
+  border: 0.0625em solid #cccccc; }
+  .resource .resource__link,
+  .resource .resource__link:link,
+  .resource .resource__link:active,
+  .resource .resource__link:visited,
+  .resource .resource__link:hover {
+    text-decoration: none; }
+  .resource .resource__link:hover {
+    background-color: red; }
+  .resource .resource__header {
+    margin-top: 0;
+    padding-top: 0; }

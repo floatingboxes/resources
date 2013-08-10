@@ -1,0 +1,145 @@
+// thanks: https://gist.github.com/stammy/4442615
+
+$mq-mobile-portrait: 20em !default; // 20em * 16px = 320px
+$mq-mobile-landscape: 30em !default; // 40em * 16px = 480px
+$mq-tablet-portrait: 48em !default; // 48em * 16px = 768px
+$mq-tablet-landscape: 64em !default; // 64em * 16px = 1024px
+$mq-desktop : 75em !default; // 75em * 16px = 1200px
+ 
+// Both portrait and landscape
+@mixin mobile-only {
+	@media (max-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+ 
+// Everything up to and including the portrait width of the phone
+// Since it's the smallest query it doesn't need a min
+@mixin mobile-portrait-only {
+	@media (max-width : $mq-mobile-portrait) {
+		@content;
+	}
+}
+ 
+// Everything up to and including the mobile portrait
+@mixin mobile-portrait-and-below {
+	@media (max-width : $mq-mobile-portrait) {
+		@content;
+	}
+}
+ 
+// Everything above and including the mobile portrait
+@mixin mobile-portrait-and-above {
+	@media (min-width : $mq-mobile-portrait) {
+		@content;
+	}
+}
+ 
+// Everthing larger than a portrait mobile up until mobile landscape
+@mixin mobile-landscape-only {
+	@media only screen and (min-width : $mq-mobile-portrait + .001) and (max-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+ 
+// Everything up to and including the mobile landscape width
+@mixin mobile-landscape-and-below {
+	@media only screen and (max-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+ 
+// Everything above and including the mobile landscape width
+@mixin mobile-landscape-and-above {
+	@media only screen and (min-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+ 
+// Both the portrait and landscape width of the tablet
+// Larger than a landscape mobile but less than or equal to a landscape tablet
+@mixin tablet-only {
+	@media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+ 
+// Everything larger than mobile landscape up until the portrait width of the tablet
+@mixin tablet-portrait-only {
+	@media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-portrait) {
+		@content;
+	}
+}
+ 
+// Everything below and including the portrait width of the tablet
+@mixin tablet-portrait-and-below {
+	@media only screen and (max-width : $mq-tablet-portrait) {
+		@content;
+	}
+}
+ 
+// Everything above and including the portrait width of the tablet
+@mixin tablet-portrait-and-above {
+	@media only screen and (min-width : $mq-tablet-portrait) {
+		@content;
+	}
+}
+ 
+// Larger than portrait but less than or equal to the landscape width
+@mixin tablet-landscape-only {
+	@media only screen and (min-width : $mq-tablet-portrait + .001) and (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+ 
+// Up to and including the tablet landscape
+@mixin tablet-landscape-and-below {
+	@media only screen and (max-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+ 
+// Everything tablet landscape and larger
+@mixin tablet-landscape-and-above {
+	@media only screen and (min-width : $mq-tablet-landscape) {
+		@content;
+	}
+}
+ 
+// Everything larger than a landscape tablet
+@mixin desktop-and-above {
+	@media only screen and (min-width : $mq-tablet-landscape + .001) {
+		@content;
+	}
+}
+ 
+// Everything below and including the desktop 
+@mixin desktop-and-below {
+	@media only screen and (max-width : $mq-desktop) {
+		@content;
+	}
+}
+ 
+// Everything larger than a landscape tablet but less than or equal to the desktop
+@mixin desktop-only {
+	@media only screen and (min-width : $mq-tablet-landscape + .001) and (max-width : $mq-desktop) {
+		@content;
+	}
+}
+ 
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+		@content;
+	}
+}
+ 
+@mixin image-2x($image, $width: auto, $height: $width) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+         only screen and (-o-min-device-pixel-ratio: 13/10),
+         only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    @if $width != auto {
+      background-size: $width $height;
+    }
+  }
+}

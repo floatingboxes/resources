@@ -9,9 +9,8 @@ title: Hello World
 {% for post in site.posts %}
 
 	<article class="resource">
-		<a href="{{ post.www-url }}">
     		<header>
-    			<h2 class="resource__header">{{ post.title }}</h2>
+    			<h2 class="resource__header"><a href="{{ post.www-url }}" class="resource__link">{{ post.title }}</a></h2>
     		</header>
     		<div class="resource__body">
     			{{ post.content }}
@@ -31,7 +30,6 @@ title: Hello World
     				<a href="{{ post.url }}">Permalink</a>
     			</div>
     		</footer>
-    	</a>
     </article>
 {% endfor %}
 </section>

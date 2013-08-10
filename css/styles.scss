@@ -1,6 +1,13 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
 @import 'lib/fonts';
-@import 'lib/colors';
+@import 'lib/variables';
+@import 'lib/mixins';
+@import 'lib/media-queries';
 
 @import 'vendor/normalize';
 
+@import 'skin/layout';
 @import 'skin/typography';
+@import 'skin/resources';

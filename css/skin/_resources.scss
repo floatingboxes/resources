@@ -1,0 +1,31 @@
+.resources {
+	@include clearfix;
+
+}
+
+.resource {
+	@include globalMargins(full, bottom);
+	@include globalPadding;
+	@include globalBorder;
+
+	.resource__link,
+	.resource__link:link,
+	.resource__link:active,
+	.resource__link:visited,
+	.resource__link:hover {
+		text-decoration: none;
+	}
+
+	.resource__link:hover {
+		background-color:red;
+	}
+
+
+	.resource__header {
+		margin-top:0;
+		padding-top:0;
+	}
+
+
+}
+
