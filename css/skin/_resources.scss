@@ -4,9 +4,11 @@
 }
 
 .resource {
+	@include box-sizing(border-box);
 	@include globalMargins(full, bottom);
 	@include globalPadding;
 	@include globalBorder;
+
 
 	.resource__link,
 	.resource__link:link,
@@ -26,6 +28,10 @@
 		padding-top:0;
 	}
 
+	@include bp(min-width, 800) {
+		// float:left;
+		// width:42.5%;
+	}
 
 }
 
