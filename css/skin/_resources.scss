@@ -10,6 +10,7 @@
 	@include globalPadding;
 	@include globalBorder;
 
+	position:relative;
 	max-width:em(400);
 	float:left;
 
@@ -25,15 +26,56 @@
 		background-color:red;
 	}
 
+	.resource__header {
+		margin:0;
+		padding:0;
+	}
+
+	.resource__timestamp {
+		font-size:em(10);
+		line-height:1;
+		text-transform:uppercase;
+		color:$timestamp-color;
+	}
+
+
+	.resource__tags ul {
+		@include removeDefaultListStyle;
+
+		.resource__tag {
+			font-size:em(11);
+			line-height:1;
+			text-transform:uppercase;
+			display:inline-block;
+			padding:em(5,11) em(10,11);
+			background-color:$tag-color;
+			border-radius:em(11,11);
+		}
+	}
+
 
 	.resource__header {
 		margin-top:0;
 		padding-top:0;
 	}
 
-	@include bp(min-width, 800) {
-		// float:left;
-		// width:42.5%;
+
+	.resource__permalink {
+		position:absolute;
+		bottom:em(-1);
+		right:em(-1);
+		@include globalBorder;
+
+		a {
+			display:block;
+			padding:em(10);
+
+			.icon-permalink {
+				width:em(16);
+				height:em(16);
+				fill:$icon-color;
+			}
+		}		
 	}
 
 }

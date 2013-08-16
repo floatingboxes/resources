@@ -490,6 +490,7 @@ i, em, dfn {
   margin-right: 2.5em;
   padding: 2.5em;
   border: 0.0625em solid #cccccc;
+  position: relative;
   max-width: 25em;
   float: left; }
   .resource .resource__link,
@@ -501,5 +502,37 @@ i, em, dfn {
   .resource .resource__link:hover {
     background-color: red; }
   .resource .resource__header {
+    margin: 0;
+    padding: 0; }
+  .resource .resource__timestamp {
+    font-size: 0.625em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #999999; }
+  .resource .resource__tags ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .resource .resource__tags ul .resource__tag {
+      font-size: 0.6875em;
+      line-height: 1;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0.45455em 0.90909em;
+      background-color: #d9ebfa;
+      border-radius: 1em; }
+  .resource .resource__header {
     margin-top: 0;
     padding-top: 0; }
+  .resource .resource__permalink {
+    position: absolute;
+    bottom: -0.0625em;
+    right: -0.0625em;
+    border: 0.0625em solid #cccccc; }
+    .resource .resource__permalink a {
+      display: block;
+      padding: 0.625em; }
+      .resource .resource__permalink a .icon-permalink {
+        width: 1em;
+        height: 1em;
+        fill: #cccccc; }

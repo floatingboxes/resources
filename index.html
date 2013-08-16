@@ -11,6 +11,9 @@ title: Hello World
 	<article class="resource">
     		<header>
     			<h2 class="resource__header"><a href="{{ post.www-url }}" class="resource__link">{{ post.title }}</a></h2>
+                <div class="resource__timestamp">
+                    {{ post.date | date: "%B %d, %Y" }}
+                </div>
     		</header>
     		<div class="resource__body">
     			{{ post.content }}
@@ -18,16 +21,13 @@ title: Hello World
     		<div class="resource__tags">
     			<ul>
     				{% for tag in post.tags %}
-    					<li>{{ tag }}</li>
+    					<li class="resource__tag">{{ tag }}</li>
     				{% endfor %}
     			</ul>
     		</div>
     		<footer>
-    			<div class="resource__timestamp">
-    				{{ post.date | date: "%d %B %Y" }}
-    			</div>
     			<div class="resource__permalink">
-    				<a href="{{ post.url }}">Permalink</a>
+    				<a href="{{ post.url }}">{% include icon-permalink.ext %}</a>
     			</div>
     		</footer>
     </article>

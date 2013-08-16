@@ -39,3 +39,9 @@
 @mixin globalBorder($width:em(1), $type:solid, $color:$global-border-color) {
 	border:$width $type $color;
 }
+
+@mixin removeDefaultListStyle() {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
