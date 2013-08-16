@@ -452,7 +452,8 @@ table {
   border-spacing: 0; }
 
 body {
-  margin: 2.5em; }
+  margin: 2.5em;
+  margin-right: 0; }
 
 html,
 button,
@@ -486,8 +487,11 @@ i, em, dfn {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 2.5em;
+  margin-right: 2.5em;
   padding: 2.5em;
-  border: 0.0625em solid #cccccc; }
+  border: 0.0625em solid #cccccc;
+  max-width: 18.75em;
+  float: left; }
   .resource .resource__link,
   .resource .resource__link:link,
   .resource .resource__link:active,

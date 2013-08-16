@@ -6,9 +6,12 @@
 .resource {
 	@include box-sizing(border-box);
 	@include globalMargins(full, bottom);
+	@include globalMargins(full, right);
 	@include globalPadding;
 	@include globalBorder;
 
+	max-width:em(300);
+	float:left;
 
 	.resource__link,
 	.resource__link:link,
