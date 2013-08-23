@@ -2,9 +2,13 @@
 layout: default
 title: Hello World
 ---
-
 <h1>Floatingboxes' Resources</h1>
-
+<form id="live-search" action="" class="styled" method="post">
+    <fieldset>
+        <input type="text" class="text-input" id="filter" value="" />
+        <span id="filter-count"></span>
+    </fieldset>
+</form>
 <section class="resources">
 {% for post in site.posts %}
 
