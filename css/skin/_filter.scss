@@ -1,0 +1,36 @@
+.filter {
+	
+
+	.filter__fields {
+		margin:0;
+		@include globalMargins(full, bottom);
+		@include globalMargins(full, right);
+		padding:0 0 em(1) 0;
+		border:1px solid $global-border-color;
+		max-width:em(400);
+
+		// This is a little janky, but basically I want to fix the width of the filter
+		// to the columns, doing this with breakpoints for now.
+
+		@include bp(em(920)) { max-width:em(840); }
+		@include bp(em(1360)) { max-width:em(1280); }
+		@include bp(em(1800)) { max-width:em(1720); }
+		@include bp(em(2240)) { max-width:em(2160); }
+		@include bp(em(2680)) { max-width:em(2600); }
+		@include bp(em(3120)) { max-width:em(3040); }
+		@include bp(em(3560)) { max-width:em(3480); }
+		@include bp(em(4000)) { max-width:em(3920); }
+
+	}
+
+	.filter__input {
+		@include box-sizing('border-box');
+		border:0;
+		margin:0;
+		width:100%;
+		outline: none;
+		padding:em(20,24) em(40,24);
+		font-size:em(24);
+	}
+
+}

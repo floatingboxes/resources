@@ -536,3 +536,45 @@ i, em, dfn {
         width: 1em;
         height: 1em;
         fill: #cccccc; }
+
+.filter .filter__fields {
+  margin: 0;
+  margin-bottom: 2.5em;
+  margin-right: 2.5em;
+  padding: 0 0 0.0625em 0;
+  border: 1px solid #cccccc;
+  max-width: 25em; }
+  @media (min-width: 57.5em) {
+    .filter .filter__fields {
+      max-width: 52.5em; } }
+  @media (min-width: 85em) {
+    .filter .filter__fields {
+      max-width: 80em; } }
+  @media (min-width: 112.5em) {
+    .filter .filter__fields {
+      max-width: 107.5em; } }
+  @media (min-width: 140em) {
+    .filter .filter__fields {
+      max-width: 135em; } }
+  @media (min-width: 167.5em) {
+    .filter .filter__fields {
+      max-width: 162.5em; } }
+  @media (min-width: 195em) {
+    .filter .filter__fields {
+      max-width: 190em; } }
+  @media (min-width: 222.5em) {
+    .filter .filter__fields {
+      max-width: 217.5em; } }
+  @media (min-width: 250em) {
+    .filter .filter__fields {
+      max-width: 245em; } }
+.filter .filter__input {
+  -webkit-box-sizing: "border-box";
+  -moz-box-sizing: "border-box";
+  box-sizing: "border-box";
+  border: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  padding: 0.83333em 1.66667em;
+  font-size: 1.5em; }

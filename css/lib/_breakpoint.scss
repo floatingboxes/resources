@@ -24,7 +24,7 @@
 	}
 
 	@else {
-		@media (min-width: em($value)) { @content; }
+		@media (min-width: $value) { @content; }
 	}
 }
 
@@ -34,6 +34,6 @@
 	}
 }
 
-@mixin bp($a, $b) {
-	@include breakpoint($a, $b) { @content }
+@mixin bp($a) {
+	@include breakpoint(nil, $a) { @content }
 }

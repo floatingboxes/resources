@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$('.resource').equalHeights();
 
 	//Live filter
-	$("#filter").keyup(function(){
+	$(".filter__input").keyup(function(){
  
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
@@ -26,7 +26,7 @@ $(document).ready(function(){
  
         // Update the count
         var numberItems = count;
-        $("#filter-count").text("Number of Comments = "+count);
+        $(".filter__count").text("Number of Comments = "+count);
     });
 
 });

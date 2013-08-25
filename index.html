@@ -11,12 +11,13 @@ title: Hello World
         </ul>
     </nav>
 </header>
-<form id="live-search" action="" class="styled" method="post">
-    <fieldset>
-        <input type="text" class="text-input" id="filter" value="" />
-        <span id="filter-count"></span>
-    </fieldset>
-</form>
+<section class="filter">
+    <form action="" class="filter__form" method="post">
+        <fieldset class="filter__fields">
+            <input type="text" class="filter__input" placeholder="Type a word here to filter" />
+        </fieldset>
+    </form>
+</section>
 <section class="resources">
 {% for post in site.posts %}
 
