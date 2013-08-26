@@ -1,30 +1,30 @@
-@mixin breakpoint($point, $value: 0) {
-	@if $point == mobile {
-		@media (min-width: em(320)) { @content; }
+@mixin breakpoint($point) {
+	@if $point == two-columns {
+		@media (min-width: em(920)) { @content; }
 	}
 
-	@else if $point == mobile-horizontal {
-		@media (min-width: em(480)) { @content; }
+	@else if $point == three-columns {
+		@media (min-width: em(1360)) { @content; }
 	}
 
-	@else if $point == tablet {
-		@media (min-width: em(768)) { @content; }
+	@else if $point == four-columns {
+		@media (min-width: em(1800)) { @content; }
 	}
 
-	@else if $point == tablet-horizontal {
-		@media (min-width: em(1024)) { @content; }
+	@else if $point == five-columns {
+		@media (min-width: em(2240)) { @content; }
 	}
 	
-	@else if $point == desktop {
-		@media (min-width: em(1280)) { @content; }
+	@else if $point == six-columns {
+		@media (min-width: em(2680)) { @content; }
 	}
 
-	@else if $point == desktop-wide {
-		@media (min-width: em(1500)) { @content; }
+	@else if $point == seven-columns {
+		@media (min-width: em(3120)) { @content; }
 	}
 
-	@else {
-		@media (min-width: $value) { @content; }
+	@else if $point == eight-columns {
+		@media (min-width: em(3560)) { @content; }
 	}
 }
 
@@ -32,8 +32,4 @@
 	@media (min-width: em($min)) and (max-width: em($max)) {
 		@content;
 	}
-}
-
-@mixin bp($a) {
-	@include breakpoint(nil, $a) { @content }
 }
