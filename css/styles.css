@@ -601,3 +601,37 @@ i, em, dfn {
   outline: none;
   padding: 0.83333em 1.66667em;
   font-size: 1.5em; }
+
+.header {
+  position: relative;
+  padding: 2.5em;
+  text-align: center; }
+  .header .header__nav {
+    position: absolute;
+    top: 3.75em;
+    left: 50%; }
+    .header .header__nav ul {
+      width: 18.75em;
+      margin: 0;
+      margin-left: -9.375em;
+      padding: 0;
+      *zoom: 1; }
+      .header .header__nav ul:before, .header .header__nav ul:after {
+        content: " ";
+        display: table; }
+      .header .header__nav ul:after {
+        clear: both; }
+    .header .header__nav li {
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 50%; }
+      .header .header__nav li a {
+        color: #cccccc;
+        text-decoration: none;
+        text-transform: uppercase; }
+    .header .header__nav li:first-child {
+      padding-left: 1.25em;
+      text-align: left; }
+    .header .header__nav li:last-child {
+      text-align: right; }

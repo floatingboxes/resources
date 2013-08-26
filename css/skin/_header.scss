@@ -1,0 +1,47 @@
+.header {
+
+	position:relative;
+	@include globalPadding;
+	text-align:center;
+
+	.header__logo {
+		
+	}
+
+	.header__nav {
+		position:absolute;
+		top:em(60);
+
+		left:50%;
+
+		ul {
+			width:em(300);
+			margin:0;
+			margin-left:em(-150);
+			padding:0;
+			@include clearfix;
+		}
+
+		li {
+			float:left;
+			margin:0;
+			padding:0;
+			width:50%;
+
+			a {
+				color:$header-link-color;
+				text-decoration:none;
+				text-transform:uppercase;
+			}
+		}
+
+		li:first-child {
+			padding-left:em(20);
+			text-align:left;
+		}
+
+		li:last-child {
+			text-align:right;
+		}
+	}
+}
