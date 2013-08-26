@@ -527,8 +527,6 @@ i, em, dfn {
   .resource .resource__link:visited,
   .resource .resource__link:hover {
     text-decoration: none; }
-  .resource .resource__link:hover {
-    background-color: red; }
   .resource .resource__header {
     margin: 0;
     padding: 0; }
