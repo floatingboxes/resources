@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-08-27 12:10:52
 title: Web Developer Checklist
-url: https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp
+www-url: https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp
 tags: 
  - chrome extension
  - launch checklist

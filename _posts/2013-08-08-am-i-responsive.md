@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-08-08 15:18:15
 title: Am I Responsive
-url: http://ami.responsivedesign.is/ 
+www-url: http://ami.responsivedesign.is/ 
 tags: 
  - responsive
  - comps

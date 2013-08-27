@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-08-08 15:22:13
 title: Siteinspire
-url: http://www.siteinspire.com/
+www-url: http://www.siteinspire.com/
 tags: 
  - inspiration
 ---

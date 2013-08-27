@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-08-27 12:20:59
 title: Emmet LiveStyle
-url: http://livestyle.emmet.io/
+www-url: http://livestyle.emmet.io/
 tags: 
  - css
  - workflow

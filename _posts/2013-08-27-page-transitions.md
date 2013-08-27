@@ -3,7 +3,7 @@ layout: post
 published: true
 date: 2013-08-27 12:17:07
 title: Page Transitions
-url: https://github.com/codrops/PageTransitions
+www-url: https://github.com/codrops/PageTransitions
 tags: 
  - animation
  - css
