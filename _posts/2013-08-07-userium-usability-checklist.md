@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 published: true
 title: Userium Usability Checklist
 date: 2013-08-07 14:29:01

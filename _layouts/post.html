@@ -1,3 +1,36 @@
 ---
-layout:default
+layout: default
+body-classes: permalink
 ---
+<div class="contianer--permalink">
+	<article class="resource--permalink">
+    		<header>
+    			<h2 class="resource__header"><a href="{{ page.www-url }}" class="resource__link">{{ page.title }}</a></h2>
+                <div class="resource__timestamp">
+                    {{ page.date | date: "%B %d, %Y" }}
+                </div>
+    		</header>
+    		<div class="resource__body">
+    			{{ content }}
+    		</div>
+    		<div class="resource__tags">
+    			<ul>
+    				{% for tag in page.tags %}
+    					<li class="resource__tag">{{ tag }}</li>
+    				{% endfor %}
+    			</ul>
+    		</div>
+    </article>
+</div>
+<div class="pagination"> 
+    {% if page.previous.url %} 
+        <div class="pagination__prev"> 
+           <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&#9664;</a> 
+        </div> 
+    {% endif %} 
+    {% if page.next.url %} 
+        <div class="pagination__next"> 
+            <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">&#9654;</a> 
+       </div> 
+    {% endif %}
+</div>
