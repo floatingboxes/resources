@@ -635,3 +635,21 @@ i, em, dfn {
       text-align: left; }
     .header .header__nav li:last-child {
       text-align: right; }
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .pagination .pagination__link {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 2.5em;
+    border-top: 1px solid #cccccc;
+    text-decoration: none; }
+    .pagination .pagination__link:hover {
+      background-color: #FFFFCC; }
+  .pagination .pagination__link--prev {
+    border-right: 1px solid #cccccc; }

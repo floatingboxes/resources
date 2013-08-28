@@ -24,13 +24,9 @@ body-classes: permalink
 </div>
 <div class="pagination"> 
     {% if page.previous.url %} 
-        <div class="pagination__prev"> 
-           <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&#9664;</a> 
-        </div> 
+        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="pagination__link pagination__link--prev">&#9664;</a> 
     {% endif %} 
     {% if page.next.url %} 
-        <div class="pagination__next"> 
-            <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">&#9654;</a> 
-       </div> 
+        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="pagination__link pagination__link--next">&#9654;</a> 
     {% endif %}
 </div>
