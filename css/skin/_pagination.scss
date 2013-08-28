@@ -1,5 +1,5 @@
 .pagination {
-	position:absolute;
+	position:fixed;
 	bottom:0;
 	left:0;
 	width:100%;
@@ -12,7 +12,8 @@
 		@include globalPadding;
 		border-top:1px solid $global-border-color;
 		text-decoration:none;
-
+		background-color:#FFFFFF;
+		
 		&:hover {
 			background-color:#FFFFCC;
 		}

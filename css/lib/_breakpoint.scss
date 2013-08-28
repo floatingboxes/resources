@@ -26,10 +26,8 @@
 	@else if $point == eight-columns {
 		@media (min-width: em(3560)) { @content; }
 	}
-}
 
-@mixin between-breakpoints($min, $max) {
-	@media (min-width: em($min)) and (max-width: em($max)) {
-		@content;
+	@else {
+		@media (min-width: $point) { @content; }
 	}
 }

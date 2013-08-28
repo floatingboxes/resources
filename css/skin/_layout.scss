@@ -17,3 +17,11 @@ body {
 	@include breakpoint(seven-columns) { max-width:em(3120); }
 	@include breakpoint(eight-columns) { max-width:em(3560); }
 }
+
+
+.container--permalink {
+	margin:auto;
+	max-width:em(600);
+	padding:em(20);
+	margin-bottom:em(200);
+}

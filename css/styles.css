@@ -483,6 +483,12 @@ table {
     .container {
       max-width: 222.5em; } }
 
+.container--permalink {
+  margin: auto;
+  max-width: 37.5em;
+  padding: 1.25em;
+  margin-bottom: 12.5em; }
+
 html,
 button,
 input,
@@ -563,6 +569,23 @@ i, em, dfn {
         height: 1em;
         fill: #cccccc; }
 
+.resource--permalink {
+  font-size: 1.375em; }
+  .resource--permalink .resource__timestamp {
+    font-size: 0.5em; }
+  .resource--permalink .resource__header {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  @media (min-width: 31.25em) {
+    .resource--permalink {
+      font-size: 2em; } }
+  @media (min-width: 62.5em) {
+    .resource--permalink {
+      font-size: 2.25em; } }
+  @media (min-width: 93.75em) {
+    .resource--permalink {
+      font-size: 2.625em; } }
+
 .filter .filter__fields {
   margin: 0;
   margin-bottom: 2.5em;
@@ -637,7 +660,7 @@ i, em, dfn {
       text-align: right; }
 
 .pagination {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%; }
@@ -648,7 +671,8 @@ i, em, dfn {
     text-align: center;
     padding: 2.5em;
     border-top: 1px solid #cccccc;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #FFFFFF; }
     .pagination .pagination__link:hover {
       background-color: #FFFFCC; }
   .pagination .pagination__link--prev {
