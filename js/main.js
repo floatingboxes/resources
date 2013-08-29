@@ -29,4 +29,10 @@ $(document).ready(function(){
         $(".filter__count").text("Number of Comments = "+count);
     });
 
+
+    // SVG Fallback with modernizr
+    if (!Modernizr.svg) {
+         $(".resource__permalink img").attr("src", "/img/permalink.png");
+    }
+
 });

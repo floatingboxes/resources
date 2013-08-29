@@ -563,11 +563,12 @@ i, em, dfn {
     border: 0.0625em solid #cccccc; }
     .resource .resource__permalink a {
       display: block;
-      padding: 0.625em; }
+      padding: 0.625em;
+      line-height: 0; }
       .resource .resource__permalink a .icon-permalink {
+        display: block;
         width: 1em;
-        height: 1em;
-        fill: #cccccc; }
+        height: 1em; }
 
 .resource--permalink {
   font-size: 1.375em; }

@@ -68,11 +68,12 @@
 		a {
 			display:block;
 			padding:em(10);
+			line-height:0;
 
 			.icon-permalink {
+				display:block;
 				width:em(16);
 				height:em(16);
-				fill:$icon-color;
 			}
 		}		
 	}
