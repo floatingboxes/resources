@@ -2,6 +2,7 @@
 
 	position:relative;
 	@include globalPadding;
+	@include globalMargins(full, right);
 	text-align:center;
 
 	.header__logo {

@@ -629,6 +629,7 @@ i, em, dfn {
 .header {
   position: relative;
   padding: 2.5em;
+  margin-right: 2.5em;
   text-align: center; }
   .header .header__nav {
     position: absolute;
