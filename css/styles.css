@@ -451,6 +451,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  background: url(http://farm9.staticflickr.com/8413/8808949252_3424932718_b.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .container {
   *zoom: 1;
   margin: auto;
@@ -523,10 +530,13 @@ i, em, dfn {
   margin-bottom: 2.5em;
   margin-right: 2.5em;
   padding: 2.5em;
-  border: 0.0625em solid #cccccc;
+  border-radius: 0.25em;
   position: relative;
   max-width: 25em;
-  float: left; }
+  float: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  box-shadow: 0 0.1875em 0.375em 0em rgba(0, 0, 0, 0.5); }
   .resource .resource__link,
   .resource .resource__link:link,
   .resource .resource__link:active,
@@ -558,9 +568,8 @@ i, em, dfn {
     padding-top: 0; }
   .resource .resource__permalink {
     position: absolute;
-    bottom: -0.0625em;
-    right: -0.0625em;
-    border: 0.0625em solid #cccccc; }
+    bottom: 0em;
+    right: 0em; }
     .resource .resource__permalink a {
       display: block;
       padding: 0.625em;
@@ -569,6 +578,14 @@ i, em, dfn {
         display: block;
         width: 1em;
         height: 1em; }
+    .resource .resource__permalink a:hover {
+      background-color: white;
+      border-top-left-radius: 0.25em;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out; }
 
 .resource--permalink {
   font-size: 1.375em; }

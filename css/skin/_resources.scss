@@ -8,11 +8,16 @@
 	@include globalMargins(full, bottom);
 	@include globalMargins(full, right);
 	@include globalPadding;
-	@include globalBorder;
+	border-radius:$global-border-radius;
 
 	position:relative;
 	max-width:em(400);
 	float:left;
+
+	background-color:$resource-background-color;
+	overflow:hidden;
+
+	box-shadow:0 em(3) em(6) em(0) rgba(0,0,0,0.5);
 
 	.resource__link,
 	.resource__link:link,
@@ -61,9 +66,8 @@
 
 	.resource__permalink {
 		position:absolute;
-		bottom:em(-1);
-		right:em(-1);
-		@include globalBorder;
+		bottom:em(0);
+		right:em(0);
 
 		a {
 			display:block;
@@ -75,6 +79,12 @@
 				width:em(16);
 				height:em(16);
 			}
+		}
+
+		a:hover {
+			background-color:$resource-permalink-hover-color;
+			border-top-left-radius:$global-border-radius;
+			@include transition (all 0.25s ease-in-out);
 		}		
 	}
 

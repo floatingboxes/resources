@@ -1,3 +1,42 @@
+//	Spacing
+//  =====================================================
+
+$global-border-radius:em(4);
+
+
+//	Colors
+//  =====================================================
+
+@function white($opacity) {
+	@return rgba(255,255,255,$opacity/100);
+}
+
+@function black($opacity) {
+	@return rgba(0,0,0,$opacity/100);
+}
+
+// Descriptive variable names
+// Theme https://kuler.adobe.com/And-Away-We-Go-color-theme-2776952/edit/?copy=true
+// Ordered by value dark -> light
+//  =====================================================
+
+$palette-1: #436073; // Dark Blue
+$palette-2: #D96B62; // Red
+$palette-3: #D98673; // Red Tint
+$palette-4: #BFB8AA; // Mid Brown
+$palette-5: #F2EBDC; // Light Brown
+
+
+// 	Functional color variables
+//	http://sachagreif.com/sass-color-variables/
+//  =====================================================
+
+$body-background-color: $palette-1;
+
+$resource-background-color: white(90);
+$resource-permalink-hover-color: white(100);
+
+
 $global-border-color:#CCCCCC;
 $tag-color:#d9ebfa;
 $timestamp-color:#999999;
