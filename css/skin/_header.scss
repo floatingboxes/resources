@@ -6,7 +6,7 @@
 	text-align:center;
 
 	.header__logo {
-		
+
 	}
 
 	.header__nav {
@@ -33,6 +33,11 @@
 				color:$header-link-color;
 				text-decoration:none;
 				text-transform:uppercase;
+				text-shadow:0 em(1) em(1) #000;
+			}
+
+			a:hover {
+				color:white(100);
 			}
 		}
 

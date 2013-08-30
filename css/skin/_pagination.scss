@@ -1,25 +1,22 @@
 .pagination {
-	position:fixed;
-	bottom:0;
-	left:0;
-	width:100%;
+	background-color:pink;
+	max-width:em(400);
 
 	.pagination__link {
 		display:block;
 		width:50%;
 		float:left;
 		text-align:center;
-		@include globalPadding;
-		border-top:1px solid $global-border-color;
 		text-decoration:none;
-		background-color:#FFFFFF;
-		
-		&:hover {
-			background-color:#FFFFCC;
-		}
-	}
+		color:white(70);
+		line-height:1;
+		font-size:em(11);
+		text-transform:uppercase;
+		text-shadow:0 em(1,11) em(1,11) #000;
 
-	.pagination__link--prev {
-		border-right:1px solid $global-border-color;
+
+		&:hover {
+			color:white(100);
+		}
 	}
 }

@@ -24,9 +24,6 @@ html {
 }
 
 
-.container--permalink {
-	margin:auto;
-	max-width:em(600);
-	padding:em(20);
-	margin-bottom:em(200);
+.permalink .container {
+	max-width:em(480);
 }

@@ -2,31 +2,30 @@
 layout: default
 body-classes: permalink
 ---
-<div class="container--permalink">
-	<article class="resource--permalink">
-    		<header>
-    			<h2 class="resource__header"><a href="{{ page.www-url }}" class="resource__link">{{ page.title }}</a></h2>
-                <div class="resource__timestamp">
-                    {{ page.date | date: "%B %d, %Y" }}
-                </div>
-    		</header>
-    		<div class="resource__body">
-    			{{ content }}
-    		</div>
-    		<div class="resource__tags">
-    			<ul>
-    				{% for tag in page.tags %}
-    					<li class="resource__tag">{{ tag }}</li>
-    				{% endfor %}
-    			</ul>
-    		</div>
-    </article>
-</div>
+
+<article class="resource resource--permalink">
+		<header>
+			<h2 class="resource__header"><a href="{{ page.www-url }}" class="resource__link">{{ page.title }}</a></h2>
+            <div class="resource__timestamp">
+                {{ page.date | date: "%B %d, %Y" }}
+            </div>
+		</header>
+		<div class="resource__body">
+			{{ content }}
+		</div>
+		<div class="resource__tags">
+			<ul>
+				{% for tag in page.tags %}
+					<li class="resource__tag">{{ tag }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+</article>
 <div class="pagination"> 
     {% if page.previous.url %} 
-        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="pagination__link pagination__link--prev">&#9664;</a> 
+        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="pagination__link pagination__link--prev">Previous</a> 
     {% endif %} 
     {% if page.next.url %} 
-        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="pagination__link pagination__link--next">&#9654;</a> 
+        <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="pagination__link pagination__link--next">Next</a> 
     {% endif %}
 </div>

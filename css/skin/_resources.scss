@@ -99,20 +99,5 @@
 }
 
 .resource--permalink {
-	font-size:em(22);
-	
-	.resource__timestamp {
-		font-size:0.5em;
-	}
-
-	.resource__header {
-		margin-bottom:0;
-		padding-bottom:0;
-	}
-
-	@include breakpoint(em(500)) { font-size:em(32); }
-	@include breakpoint(em(1000)) { font-size:em(36); }
-	@include breakpoint(em(1500)) { font-size:em(42); }
-
 }
 

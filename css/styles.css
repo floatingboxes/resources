@@ -490,11 +490,8 @@ html {
     .container {
       max-width: 222.5em; } }
 
-.container--permalink {
-  margin: auto;
-  max-width: 37.5em;
-  padding: 1.25em;
-  margin-bottom: 12.5em; }
+.permalink .container {
+  max-width: 30em; }
 
 html,
 button,
@@ -593,23 +590,6 @@ i, em, dfn {
       -o-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out; }
 
-.resource--permalink {
-  font-size: 1.375em; }
-  .resource--permalink .resource__timestamp {
-    font-size: 0.5em; }
-  .resource--permalink .resource__header {
-    margin-bottom: 0;
-    padding-bottom: 0; }
-  @media (min-width: 31.25em) {
-    .resource--permalink {
-      font-size: 2em; } }
-  @media (min-width: 62.5em) {
-    .resource--permalink {
-      font-size: 2.25em; } }
-  @media (min-width: 93.75em) {
-    .resource--permalink {
-      font-size: 2.625em; } }
-
 .filter .filter__fields {
   margin: 0;
   margin-bottom: 2.5em;
@@ -681,7 +661,10 @@ i, em, dfn {
       .header .header__nav li a {
         color: #cccccc;
         text-decoration: none;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-shadow: 0 0.0625em 0.0625em black; }
+      .header .header__nav li a:hover {
+        color: white; }
     .header .header__nav li:first-child {
       padding-left: 1.25em;
       text-align: left; }
@@ -689,20 +672,18 @@ i, em, dfn {
       text-align: right; }
 
 .pagination {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
+  background-color: pink;
+  max-width: 25em; }
   .pagination .pagination__link {
     display: block;
     width: 50%;
     float: left;
     text-align: center;
-    padding: 2.5em;
-    border-top: 1px solid #cccccc;
     text-decoration: none;
-    background-color: #FFFFFF; }
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1;
+    font-size: 0.6875em;
+    text-transform: uppercase;
+    text-shadow: 0 0.09091em 0.09091em black; }
     .pagination .pagination__link:hover {
-      background-color: #FFFFCC; }
-  .pagination .pagination__link--prev {
-    border-right: 1px solid #cccccc; }
+      color: white; }
