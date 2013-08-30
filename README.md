@@ -38,4 +38,4 @@ Also, background photo credit goes to my lovely wife, [Erin Sweeney](http://www.
 
 Email me, [dan@floatingboxes.com](mailto:dan@floatingboxes.com) or visit my website [floatingboxes.com](http://floatingboxes.com).
 
-(![Proudly Creating in Iowa's Creative Corridor](http://f.cl.http://f.cl.ly/items/2A0c1I0f0d13062l3X3h/wch_madein-02.png))[http://creativecorridor.co]
+<a href="http://creativecorridor.co">![Proudly Creating in Iowa's Creative Corridor](http://f.cl.http://f.cl.ly/items/2A0c1I0f0d13062l3X3h/wch_madein-02.png)</a>
