@@ -1,6 +1,6 @@
 # Floatingboxes' Resources
 
-I used to keep lists of useful links in [Evernote](https://evernote.com/), but I've always been told it's nice to share. So here you go. 
+I used to keep lists of useful links in [Evernote](https://evernote.com/), but I've always been told it's nice to share. [So here you go](http://resources.floatingboxes.com). 
 
 Oh, before you go! You can [contribute if you'd like](https://github.com/floatingboxes/resources). [Submit an issue](https://github.com/floatingboxes/resources/issues) if you're not down with Git, or [fork](https://github.com/floatingboxes/resources) and make a pull request.
 
