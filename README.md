@@ -9,3 +9,5 @@ This site is a work in progress. It uses [Jekyll](https://github.com/mojombo/jek
 I get most of these links from [Twitter](http://twitter.com/floatingboxes), [Sidebar](http://sidebar.io/), [Responsive Design Weekly](http://responsivedesignweekly.com/), [CSS Weekly](http://css-weekly.com/), [HTML5 Weekly](http://html5weekly.com/), and [Web Tools Weekly](http://webtoolsweekly.com/)--so a majority of the credit for content goes to them.
 
 Email me, [dan@floatingboxes.com](mailto:dan@floatingboxes.com) or visit my website [floatingboxes.com](http://floatingboxes.com).
+
+![Proudly Creating in Iowa's Creative Corridor](http://f.cl.ly/items/281b422X3Y3g3G3u2s1v/Image%202013.08.29%208%3A01%3A42%20PM.png)
