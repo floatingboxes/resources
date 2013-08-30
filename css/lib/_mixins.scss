@@ -45,3 +45,7 @@
 	padding:0;
 	list-style:none;
 }
+
+@mixin globalBoxShadow() {
+	box-shadow:0 em(3) em(6) em(0) rgba(0,0,0,0.5);
+}

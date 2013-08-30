@@ -1,12 +1,17 @@
 .filter {
 	
 
+
+
 	.filter__fields {
 		margin:0;
 		@include globalMargins(full, bottom);
 		@include globalMargins(full, right);
+		@include globalBoxShadow;
+		border-radius:$global-border-radius;
+		overflow:hidden;
+
 		padding:0 0 em(1) 0;
-		border:1px solid $global-border-color;
 		max-width:em(400);
 
 		// This is a little janky, but basically I want to fix the width of the filter
@@ -30,6 +35,8 @@
 		outline: none;
 		padding:em(20,24) em(40,24);
 		font-size:em(24);
+		background:none;
+		background-color:$filter-input-background-color;
 	}
 
 }

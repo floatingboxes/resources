@@ -8,16 +8,17 @@
 	@include globalMargins(full, bottom);
 	@include globalMargins(full, right);
 	@include globalPadding;
-	border-radius:$global-border-radius;
+	@include globalBoxShadow;
 
-	position:relative;
-	max-width:em(400);
+	position:relative;	
 	float:left;
-
-	background-color:$resource-background-color;
 	overflow:hidden;
+	max-width:em(400);
+	
+	border-radius:$global-border-radius;
+	background-color:$resource-background-color;
+	
 
-	box-shadow:0 em(3) em(6) em(0) rgba(0,0,0,0.5);
 
 	.resource__link,
 	.resource__link:link,

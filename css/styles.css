@@ -530,13 +530,13 @@ i, em, dfn {
   margin-bottom: 2.5em;
   margin-right: 2.5em;
   padding: 2.5em;
-  border-radius: 0.25em;
+  box-shadow: 0 0.1875em 0.375em 0em rgba(0, 0, 0, 0.5);
   position: relative;
-  max-width: 25em;
   float: left;
-  background-color: rgba(255, 255, 255, 0.9);
   overflow: hidden;
-  box-shadow: 0 0.1875em 0.375em 0em rgba(0, 0, 0, 0.5); }
+  max-width: 25em;
+  border-radius: 0.25em;
+  background-color: rgba(255, 255, 255, 0.9); }
   .resource .resource__link,
   .resource .resource__link:link,
   .resource .resource__link:active,
@@ -608,8 +608,10 @@ i, em, dfn {
   margin: 0;
   margin-bottom: 2.5em;
   margin-right: 2.5em;
+  box-shadow: 0 0.1875em 0.375em 0em rgba(0, 0, 0, 0.5);
+  border-radius: 0.25em;
+  overflow: hidden;
   padding: 0 0 0.0625em 0;
-  border: 1px solid #cccccc;
   max-width: 25em; }
   @media (min-width: 57.5em) {
     .filter .filter__fields {
@@ -641,7 +643,9 @@ i, em, dfn {
   width: 100%;
   outline: none;
   padding: 0.83333em 1.66667em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .header {
   position: relative;
