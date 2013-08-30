@@ -25,10 +25,16 @@
 	.resource__link:active,
 	.resource__link:visited,
 	.resource__link:hover {
+		color:$resource-link-color;
 		text-decoration: none;
 	}
 
+	.resource__link:visited {
+		color:$resource-link-color-visited;
+	}
+
 	.resource__link:hover {
+		color:$resource-link-color-hover;
 	}
 
 	.resource__header {
@@ -55,6 +61,7 @@
 			padding:em(5,11) em(10,11);
 			background-color:$tag-color;
 			border-radius:em(11,11);
+			color:#ffffff;
 		}
 	}
 

@@ -542,7 +542,12 @@ i, em, dfn {
   .resource .resource__link:active,
   .resource .resource__link:visited,
   .resource .resource__link:hover {
+    color: #d96b62;
     text-decoration: none; }
+  .resource .resource__link:visited {
+    color: #436073; }
+  .resource .resource__link:hover {
+    color: #d98673; }
   .resource .resource__header {
     margin: 0;
     padding: 0; }
@@ -561,8 +566,9 @@ i, em, dfn {
       text-transform: uppercase;
       display: inline-block;
       padding: 0.45455em 0.90909em;
-      background-color: #d9ebfa;
-      border-radius: 1em; }
+      background-color: #bfb8aa;
+      border-radius: 1em;
+      color: #ffffff; }
   .resource .resource__header {
     margin-top: 0;
     padding-top: 0; }

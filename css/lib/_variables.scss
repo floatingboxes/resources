@@ -33,13 +33,18 @@ $palette-5: #F2EBDC; // Light Brown
 
 $body-background-color: $palette-1;
 
+$resource-link-color: $palette-2;
+$resource-link-color-active: $palette-2;
+$resource-link-color-hover: $palette-3;
+$resource-link-color-visited: $palette-1;
+
 $resource-background-color: white(90);
 $resource-permalink-hover-color: white(100);
 
 $filter-input-background-color:white(90);
 
 $global-border-color:#CCCCCC;
-$tag-color:#d9ebfa;
+$tag-color:$palette-4;
 $timestamp-color:#999999;
 $icon-color:#CCCCCC;
 $header-link-color:#CCCCCC;
