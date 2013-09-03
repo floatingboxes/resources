@@ -512,6 +512,16 @@ i, em, dfn {
   font-style: italic;
   font-weight: 300; }
 
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: #436073; }
+
+a:hover {
+  color: #d96b62; }
+
 .resources {
   *zoom: 1; }
   .resources:before, .resources:after {
@@ -553,6 +563,9 @@ i, em, dfn {
     line-height: 1;
     text-transform: uppercase;
     color: #999999; }
+  .resource .resource__credit {
+    font-size: 0.75em;
+    margin-bottom: 2em; }
   .resource .resource__tags ul {
     margin: 0;
     padding: 0;

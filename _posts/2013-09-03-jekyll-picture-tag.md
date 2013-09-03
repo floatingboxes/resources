@@ -4,6 +4,7 @@ published: true
 date: 2013-09-03 16:12:38
 title: Jekyll Picture Tag
 www-url: https://github.com/robwierzbowski/jekyll-picture-tag
+credit: Web Tools Weekly
 credit-twitter: WebToolsWeekly
 credit-url: http://webtoolsweekly.com/
 tags: 

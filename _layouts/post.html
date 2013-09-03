@@ -12,6 +12,13 @@ body-classes: permalink
 		</header>
 		<div class="resource__body">
 			{{ content }}
+			{% if page.credit %}
+				<p class="resource__credit">via
+					{% if page.credit-url %}<a href="{{page.credit-url}}">{{page.credit}}</a>{% endif %}
+					{% if page.credit-twitter and page.credit-url %} / {% endif %}
+					{% if page.credit-twitter %}<a href="http://twitter.com/{{ page.credit-twitter }}">@{{ page.credit-twitter }}</a> {% endif %}
+				</p>
+			{% endif %}
 		</div>
 		<div class="resource__tags">
 			<ul>

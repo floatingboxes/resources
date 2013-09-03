@@ -17,8 +17,6 @@
 	
 	border-radius:$global-border-radius;
 	background-color:$resource-background-color;
-	
-
 
 	.resource__link,
 	.resource__link:link,
@@ -49,6 +47,10 @@
 		color:$timestamp-color;
 	}
 
+	.resource__credit {
+		font-size:em(12);
+		margin-bottom:em(24,12);
+	}
 
 	.resource__tags ul {
 		@include removeDefaultListStyle;
