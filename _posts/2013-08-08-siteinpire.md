@@ -6,6 +6,7 @@ title: Siteinspire
 www-url: http://www.siteinspire.com/
 tags: 
  - inspiration
+ - showcase
 ---
 
 A showcase of well-designed websites to get the creative juices flowing.
