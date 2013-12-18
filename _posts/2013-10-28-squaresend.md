@@ -12,4 +12,4 @@ tags:
  - javascript
 ---
 
-Turns mailto: links on your site into nice feedback forms with a simple javascript include. Free for up to 50 emails/mo.
+Turns _mailto_ links on your site into nice feedback forms with a simple javascript include. Free for up to 50 emails/mo.
