@@ -1,2 +1,3 @@
 url: http://resources.floatingboxes.com
 exclude: [styles.scss]
+markdown: kramdown
