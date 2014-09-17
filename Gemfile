@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~>2.0.0'
-gem 'sass', '~>3.3.7'
+gem 'jekyll', '~>2.4.0'
+gem 'sass', '~>3.4.4'
