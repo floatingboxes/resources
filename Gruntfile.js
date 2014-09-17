@@ -103,7 +103,7 @@ module.exports = function(grunt) {
     // =====================================
     watch: {
       css: {
-        files: ['./src/css/**/*.sass'],
+        files: ['./src/css/**/*.s*ss'],
         tasks: ['sass', 'autoprefixer', 'copy'],
         options: {
           spawn: false,
