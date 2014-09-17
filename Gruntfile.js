@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         options: {
           force: true
         },
-        src: [ '../fb-resources-prod']
+        src: [ '../fb-resources-prod/*']
       },
     },
 
