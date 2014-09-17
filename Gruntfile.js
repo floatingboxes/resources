@@ -19,7 +19,10 @@ module.exports = function(grunt) {
         src: [ './build/dev' ]
       },
       prod: {
-        src: [ './build/prod']
+        options: {
+          force: true
+        },
+        src: [ '../fb-resources-prod']
       },
     },
 
@@ -58,6 +61,7 @@ module.exports = function(grunt) {
       },
     },
 
+
     // Build Site w/ Jekyll
     // =====================================
     jekyll: {
@@ -70,7 +74,7 @@ module.exports = function(grunt) {
       prod: {
         options: {
           src: './src',
-          dest: './build/prod'
+          dest: '../fb-resources-prod'
         }
       }
     },
