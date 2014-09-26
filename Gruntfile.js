@@ -19,11 +19,8 @@ module.exports = function(grunt) {
         src: [ './build/dev' ]
       },
       prod: {
-        options: {
-          force: true
-        },
-        src: [ '../fb-resources-prod/*']
-      },
+        src: [ './build/prod']
+      }
     },
 
 
@@ -62,6 +59,19 @@ module.exports = function(grunt) {
     },
 
 
+    // Git deploy to gh-pages
+    // =====================================
+    git_deploy: {
+      prod: {
+        options: {
+          branch: 'gh-pages',
+          url: 'https://github.com/floatingboxes/resources.git'
+        },
+        src: './build/prod'
+      },
+    },
+
+
     // Build Site w/ Jekyll
     // =====================================
     jekyll: {
@@ -74,7 +84,7 @@ module.exports = function(grunt) {
       prod: {
         options: {
           src: './src',
-          dest: '../fb-resources-prod'
+          dest: './build/prod'
         }
       }
     },
@@ -126,9 +136,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-git-deploy');
   grunt.loadNpmTasks('grunt-jekyll');
 
   grunt.registerTask('dev', ['clean:dev', 'sass:dev', 'autoprefixer', 'jekyll:dev', 'concurrent:dev']);
-  grunt.registerTask('prod', ['clean:prod', 'sass:prod', 'autoprefixer', 'jekyll:prod']);
+  grunt.registerTask('prod', ['clean:prod', 'sass:prod', 'autoprefixer', 'jekyll:prod', 'git_deploy:prod']);
 
 };
