@@ -20,26 +20,26 @@ $global-border-radius:em(4);
 // Ordered by value dark -> light
 //  =====================================================
 
-$palette-1: #436073; // Dark Blue
-$palette-2: #D96B62; // Red
-$palette-3: #D98673; // Red Tint
-$palette-4: #BFB8AA; // Mid Brown
-$palette-5: #F2EBDC; // Light Brown
+$blue: #3f4c6b; // Dark Blue
+$red: #D96B62; // Red
+$red-alt: #D98673; // Red Tint
+$brown: #BFB8AA; // Mid Brown
+$brown-alt: #F2EBDC; // Light Brown
 
 
 // 	Functional color variables
 //	http://sachagreif.com/sass-color-variables/
 //  =====================================================
 
-$body-background-color: $palette-1;
+$body-background-color: $blue;
 
-$link-color: $palette-1;
-$link-color-hover: $palette-2;
+$link-color: $blue;
+$link-color-hover: $red;
 
-$resource-link-color: $palette-2;
-$resource-link-color-active: $palette-2;
-$resource-link-color-hover: $palette-3;
-$resource-link-color-visited: $palette-1;
+$resource-link-color: $red;
+$resource-link-color-active: $red;
+$resource-link-color-hover: $red-alt;
+$resource-link-color-visited: $blue;
 
 $resource-background-color: white(90);
 $resource-permalink-hover-color: white(100);
@@ -47,7 +47,7 @@ $resource-permalink-hover-color: white(100);
 $filter-input-background-color:white(90);
 
 $global-border-color:#CCCCCC;
-$tag-color:$palette-4;
+$tag-color:$brown;
 $timestamp-color:#999999;
 $icon-color:#CCCCCC;
 $header-link-color:#CCCCCC;

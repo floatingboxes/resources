@@ -31,8 +31,6 @@ I get most of these links from the following awesome resources, so a majority of
  - [HTML5 Weekly](http://html5weekly.com/)
  - [Web Tools Weekly](http://webtoolsweekly.com/)
 
-Also, background photo credit goes to my lovely wife, [Erin Sweeney](http://www.flickr.com/photos/dsweeney/8808949252/).
-
 
 ## Contact
 
