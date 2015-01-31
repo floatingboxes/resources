@@ -3,3 +3,4 @@ node_modules/
 build/
 src/css/styles.css
 src/css/styles.css.map
+Gemfile.lock
