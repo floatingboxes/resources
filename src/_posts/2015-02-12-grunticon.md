@@ -5,9 +5,9 @@ date: 2015-02-12 09:59:59
 title: Grunticon
 www-url: http://www.grunticon.com
 credit: CSS Weekly
-credit-twitter: 
+credit-twitter: CSSWeekly
 credit-url: http://css-weekly.com
-tags: https://twitter.com/CSSWeekly
+tags:
  - svg
  - grunt
 ---
